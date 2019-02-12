@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Cheng Yao}{CHIK}{ %\urlstyle{same}
+\href{mailto:chikchengyao@gmail.com}{chikchengyao@gmail.com} | \href{mailto:chikchengyao@u.nus.edu}{chikchengyao@u.nus.edu}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{National University}
+\subsection{of Singapore (NUS)}
+\descript{BComp in Computer Science}
+\location{Aug 2017 - May 2021 (Expected)}
+\location{Cum. GPA: 4.74 / 5.0}
+\sectionsep
+
+\subsection{Hwa Chong Institution}
+\descript{Diploma (Distinction)}
+\location{Jan 2009 - Dec 2014}
+\location{'A' Levels: 7 Distinctions, AAA/A}
+\location{SAT I: 2270/2400}
+\location{SAT II: 2400/2400}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/chikchengyao}{\bf chikchengyao} \\
+HackerRank:// \href{https://www.hackerrank.com/chikchengyao}{\bf chikchengyao}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Discrete Structures \\
+Data Structures and Algorithms \\
+Computer Organisation \\
+Information Security \\
+Software Engineering \\
+Linear Algebra
+\sectionsep
+
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{Fluent}
+Java \textbullet{} Python \\ 
+\location{Familiar}
+C \textbullet{} C++ \textbullet{} C\# \textbullet{} HTML \textbullet{} JS \textbullet{} Shell \\
+\LaTeX\ \textbullet{} MIPS \textbullet{} Go \textbullet{} SQL \textbullet{} hq9+
+\sectionsep
+
+\subsection{Frameworks}
+Android \textbullet{} ARCore \textbullet{} ASP.NET \\
+ExpressJS \textbullet{} Firebase \textbullet{} ReactJS
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+NUS Merit Scholarship \\
+A*STAR JC Science Award \\
+Int'l Young Physicists' Tournament (1st) \\
+Lee Kuan Yew Award for Math \& Science \\
+
+
+%\section{NOTABLE ACHIEVEMENTS} 
+%\begin{tabular}{rll}
+%2018        & University      & Elected Honorary General Secretary for USP \\
+%2017	     & International & HackerRank Week of Code 29 (33rd of 9000+) \\
+%2016        & Battalion       & Commanding Officer's Coin for Best HIMARS Crew \\
+%2015        & National        & Lee Kuan Yew Award for Mathematics and Science \\
+%2014        & National        & Singapore Schools Contract Bridge Championships (1st) \\
+%2013        & International & International Young Physicists Tournament (1st) \\
+%2012        & School          & Top Student for Physics \\
+%%2011 & & \\
+%%2010  & &
+%%2009        & National       & Singapore Mathematical Olympiad (Junior) (Gold)
+%%2008        & National       & 
+%
+%\end{tabular}
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Other Activities}
+%\subsection{Service}
+%Tutoring underprivileged kids \textbullet{} House Vice-Captain \\
+%Set \& Props i/c
+%\sectionsep
+%
+%\subsection{Arts}
+%Rhythm and acoustic guitar \\
+%Orchestral covers of pop songs \\
+%Original short fiction and fanfiction \\
+%Parallel pen calligraphy \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Other Activities}
+%\subsection{Projects}
+%Morse code trainer \\
+%Markov chain NLP \\
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+
+\runsubsection{\href{https://www.janestreet.com}{Jane Street}}
+\descript{| Software Development Intern}
+\location{May 2019 - Aug 2019}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Upcoming
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.ripplecreate.com/}{ripplecreate}}
+\descript{| Software Development Intern }
+\location{May 2018 - Jul 2018}
+\begin{tightemize}
+\item Developed Android app for flying drones via Bluetooth LE. Could also relay commands from a microcontroller.
+\item In a team of three, developed web portal in ASP.NET for internal employee management, lesson scheduling and secure content delivery.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HACKATHONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hackathons}
+
+\runsubsection{\href{https://hackathon.smulit.com}{LIT Hackathon}}
+\descript{| \href{https://goko.ml}{Goko - Legal Guidance for Migrant Workers}}
+\location{1 - 3 Feb 2018}
+\begin{tightemize}
+\item Placed in top 4 teams.
+\item As the tech lead, solo developed front and backend for an interactive web app.
+\item Gives free advice and documents to migrant workers with employment woes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hack\&Roll 2019}
+\descript{| Telepedia - Covert Telegram Client}
+\location{27 - 28 Jan 2018}
+\begin{tightemize}
+\item In a team of four, made a Telegram client that looks like Wikipedia.
+\item Supports displaying messages as article text and sending using the search bar.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{iNTUition 5.0}
+\descript{| \href{https://github.com/chikchengyao/bitesize}{BiteSize - Accurate AR Ordering}}
+\location{13 - 14 Oct 2018}
+\begin{tightemize}
+\item Placed in top 15 teams.
+\item In a team of four, created an augmented reality app using Android ARCore.
+\item Displays AR representation of food ordered, with tweakable portion sizes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Hack\&Roll 2018}
+\descript{| \href{https://github.com/Butter-NaN/ProDuck}{Produck - Productive Tab Manager}}
+\location{27 - 28 Jan 2018}
+\begin{tightemize}
+\item In a team of four, made a Chrome extension for Pomodoro technique users.
+\item Maintains sets of ``work'' and ``rest'' tabs, switching between them automatically.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{\#startathon}
+%\descript{| Wearable health and safety monitor}
+%\location{21 - 22 Oct 2017}
+%\begin{tightemize}
+%\item In a team of three, created a wearable monitor for heavy industry workers.
+%\item Detects heat exhaustion, blunt trauma, and protective equipment compliance.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities}
+\subsection{USP Developers}
+\location{Aug 2017 - Present}
+\begin{tightemize}
+\item In 2017, joined the University Scholars Programme (USP) Developers.
+\item Helped develop the room-booking feature in the USP Telegram bot.
+\item In 2018, was elected Honorary General Secretary, heading USP Developers. 
+\item Currently coordinating renewal and integration of USP online facilities, including website and Internet of Things on campus.
+\end{tightemize}
+\sectionsep
+
+\subsection{Competitive Programming}
+\location{Jan 2017 - Mar 2017}
+\begin{tightemize}
+\item Self-learned Java, Python and some data structures and algorithms.
+\item Briefly took up competitive programming, mainly on HackerRank.
+\item Achieved \href{https://www.hackerrank.com/chikchengyao}{99.64th percentile on HackerRank.}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
